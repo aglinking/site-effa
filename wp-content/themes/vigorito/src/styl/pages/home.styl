@@ -1,0 +1,66 @@
+@import '../global-variables';
+
+#home {
+    #section-1 {
+        margin-top: 18px;
+        margin-bottom: 36px;
+
+        @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+            margin-bottom: 40px;
+        }
+
+        .container-mob-100 {
+            @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                // padding: 0px;
+                max-width: 100% !important;
+            }
+        }
+
+        .splide__slide {
+            img {
+                max-width: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .splide__arrow {
+            background: transparent !important;
+
+            svg {
+                fill: cor4;
+            }
+        }
+
+        .splide__arrow--prev {
+            left: 5px;
+        }
+
+        .splide__arrow--next {
+            right: 5px;
+        }
+    }
+
+    #section-ofertas-0-km {
+        margin-bottom: 60px;
+    }
+
+    #section-4 {
+        margin-bottom: 40px;
+
+        .splide__slide {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    @import '../globals-sections/section-depoimentos';
+    @import '../globals-sections/section-unidades';
+
+    #section-nossas-unidades {
+        @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+            margin-top: 50px;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+@import '../global-variables';
+@import '../globals-sections/section-banner-intro-int';
+
+#padrao-corrido {
+    .section-padrao {
+        margin-bottom: 31px;
+    }
+
+    .accordion-info .fa-chevron-down {
+        right: 5px;
+    }
+
+    .accordion-info, .dataTables_wrapper{
+        margin-top: -19px;
+    
+    }
+
+    .accordion-item {
+        margin-bottom: 11px;
+    }
+
+    .dataTables_scrollHead, .dataTables_scrollBody {
+        @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+            width: auto !important;
+        }
+    }
+
+    .tablepress>:where(thead, tfoot)>*>th {
+        background-color: cor2;
+        color: cor4;
+
+        * {
+            color: cor4;
+        }
+    }
+
+    .dataTables_scrollHead::-webkit-scrollbar {
+        height: 5px;
+    }
+
+    .dataTables_scrollBody::-webkit-scrollbar {
+        height: 5px;
+    }
+
+    .dataTables_scroll {
+        @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+            height: 500px;
+            overflow-y: scroll;
+        }
+    }
+
+    .dataTables_scroll::-webkit-scrollbar {
+        width: 5px;
+    }
+}
+
+@import '../globals-sections/section-unidades';

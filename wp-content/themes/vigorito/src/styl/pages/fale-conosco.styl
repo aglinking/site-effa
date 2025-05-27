@@ -1,0 +1,65 @@
+@import '../global-variables';
+@import '../globals-sections/section-banner-intro-int';
+
+#fale-conosco {
+    #section-1 {
+        margin-bottom: 40px;
+
+        .flex-coluna {
+            @media screen and (min-width: desktop-min) {
+                display: flex;
+            }
+
+            .col-txt {
+                @media screen and (min-width: desktop-min) {
+                    max-width: 444px;
+                }
+            }
+
+            form {
+                background: cor2;
+                border-radius: 12px;
+                padding: 12px;
+                height: fit-content;
+                width: 100%;
+
+                @media screen and (min-width: desktop-min) {
+                    margin-left: 54px;
+                }
+
+                select, input, textarea {
+                    margin-bottom: 11px;
+                }
+
+                textarea {
+                    height: 132px;
+                }
+
+                .button {
+                    width: 100%;
+                    text-transform: uppercase;
+                    height: 41px;
+
+                    @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                        margin-top: 11px;
+                    }
+                }
+
+                .form-check {
+                    margin-top: 18px;
+                }
+
+                .form-check-label {
+                    color: cor4;
+
+                    * {
+                        color: cor4;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import '../globals-sections/section-ofertas';
+@import '../globals-sections/section-unidades';

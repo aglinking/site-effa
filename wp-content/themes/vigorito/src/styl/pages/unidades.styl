@@ -1,0 +1,130 @@
+@import '../global-variables';
+
+#unidades {
+    #section-1 {
+        margin-bottom: 40px;
+        margin-top: 10px;
+
+        .box-unidades {
+            border: 2px solid cor8;
+            border-radius: 12px;
+            padding-left: 16px;
+            padding: 16px;
+            // display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            background-color: cor6;
+            align-items: center;
+
+            .unidades {
+                display: flex;
+                gap: 8px;
+                align-items: center;
+                flex-wrap: wrap;
+                row-gap: 8px;
+
+                .unid-active {
+                    .box {
+                        background: cor3;
+                        color: cor4;
+                        i{
+                            color: cor4;
+                        }
+                    }
+                }
+
+                .box {
+                    width: 225px;
+                    padding: 13px;
+                    border-radius: 13px;
+                    border: 2px solid cor8;
+                    background-color: cor4;
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    font-weight: w-bold;
+                    font-size: 13px;
+
+                    .fa {
+                        color: cor3;
+                        font-size: 29px;
+                    }
+                }
+            }
+        }
+    }
+
+    #section-2 {
+        column-gap: 52px;
+        margin-bottom: 40px;
+
+        .info-1 {
+            @media screen and (min-width: desktop-min) {
+                display: flex;
+                align-items: center;
+                gap: 29px;
+            }
+
+            .atendimento {
+                max-width: 371px;
+            }
+
+            .links-maps {
+                @media screen and (min-width: desktop-min) {
+                    display: flex;
+                    gap: 11px;
+                }
+
+                @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                    text-align: center;
+                    margin-bottom: 5px;
+                }
+
+                a {
+                    display: block;
+                    margin-bottom: 11px;
+                }
+            }
+        }
+
+        .iframe-map {
+            @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                margin-bottom: 40px;
+            }
+
+            iframe {
+                height: 398px;
+                width: 98.3%;
+
+                @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .model-side-form-1 {
+        position: sticky;
+        top: 100;
+
+        @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+            margin: 0;
+        }
+    }
+
+    .col-left {
+        @media screen and (min-width: desktop-min) {
+            width: 72%;
+        }
+    }
+
+    .col-right {
+        @media screen and (min-width: desktop-min) {
+            width: 27.3%;
+            padding-right: 3px;
+        }
+    }
+}
+
+@import '../components/forms/model-1';
+@import '../globals-sections/section-ofertas';

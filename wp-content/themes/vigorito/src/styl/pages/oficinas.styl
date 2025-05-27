@@ -1,0 +1,78 @@
+@import '../global-variables';
+@import '../globals-sections/section-banner-intro-int';
+
+#oficinas {
+    .row-items {
+        margin-top: 6px;
+    }
+
+    path {
+        fill: cor7;
+        stroke-width: 0px;
+    }
+
+    #section-1 {
+        margin-bottom: 69px;
+
+        @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+            margin-bottom: 40px;
+        }
+
+        .col-left {
+            @media screen and (min-width: desktop-min) {
+                width: 73%;
+            }
+        }
+
+        .col-right {
+            @media screen and (min-width: desktop-min) {
+                width: 24.3%;
+            }
+        }
+
+        .accordion-info {
+            @media screen and (min-width: desktop-min) {
+                display: flex;
+                gap: 14px;
+                flex-wrap: wrap;
+                position: sticky;
+                top: 100;
+            }
+
+            .accordion-item {
+                width: 283px;
+                padding: 2px;
+
+                @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                    width: 100%;
+                    margin-bottom: 14px;
+                }
+            }
+
+            .accordion-button {
+                font-size: 16px;
+                display: flex;
+                gap: 13px;
+                min-height: 68.8px;
+
+                svg {
+                    width: 44px;
+                    height: 31px;
+                }
+            }
+
+            .accordion-body {
+                font-size: 15px;
+                padding: 11px 15px 56px 15px;
+
+                * {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@import '../globals-sections/section-ofertas-oficina';
+@import '../globals-sections/section-depoimentos';
+@import '../globals-sections/section-unidades';

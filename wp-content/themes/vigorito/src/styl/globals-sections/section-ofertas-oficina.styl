@@ -1,0 +1,36 @@
+
+#section-ofertas-oficina {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+        margin-bottom: 14px;
+    }
+
+    .card-item {
+        border-radius: 12px;
+        border: 1px solid cor8;
+        margin-bottom: 26px;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 162px;
+            border-top-right-radius: 12px;
+            border-top-left-radius: 12px;
+            margin-bottom: 15px;
+
+            @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                height: 128px;
+            }
+        }
+
+        .content {
+            padding-left: 9px;
+            padding-right: 9px;
+
+            * {
+                font-size: 16px;
+            }
+        }
+    }
+}

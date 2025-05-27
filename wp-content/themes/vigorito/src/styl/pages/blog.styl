@@ -1,0 +1,121 @@
+@import '../global-variables';
+
+#blog {
+    #header-index-blog {
+        background: cor2;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+            height: 100px;
+        }
+
+        .col-12 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        * {
+            color: cor4;
+        }
+
+        .title-large {
+            width: fit-content;
+        }
+    }
+
+    // @import '../globals-sections/section-intro-int';
+    #content-blog {
+        display: flex;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        justify-content: space-between;
+
+        @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+            flex-wrap: wrap;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        #content-card-post {
+            display: flex;
+            gap: 10px;
+            max-width: 942px;
+            flex-wrap: wrap;
+
+            @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                max-width: 100%;
+                margin-bottom: 40px;
+            }
+        }
+
+        .card-blog {
+            max-width: 300px;
+            min-height: 300px;
+            padding-bottom: 20px;
+            border: 2px solid cor8;
+            border-radius: 12px;
+
+            @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                max-width: 100%;
+            }
+
+            img {
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+                border-top-right-radius: 12px;
+                border-top-left-radius: 12px;
+            }
+
+            .title {
+                font-size: 20px;
+                line-height: 23px;
+                color: cor2;
+                font-weight: w-bold;
+                margin-top: 20px;
+            }
+
+            .content-text {
+                padding-left: 19px;
+                padding-right: 19px;
+            }
+
+            .button-leia {
+                color: cor2;
+                text-decoration: underline !important;
+                font-weight: w-bold;
+            }
+
+            .data {
+                font-size: 16px;
+                color: cor7;
+                display: block;
+                margin-bottom: 17px;
+            }
+        }
+    }
+
+    .paginacao {
+        margin-top: 30px;
+    }
+
+    .page-numbers {
+        border: 1px solid;
+        padding: 10px;
+        border-color: cor2;
+        color: cor2;
+    }
+
+    .page-numbers.current {
+        border-color: cor2;
+        color: cor2;
+        color: white;
+        background: cor2;
+    }
+
+    @import '../globals-sections/sidebar-blog';
+}

@@ -1,0 +1,36 @@
+@import '../global-variables';
+@import '../globals-sections/section-banner-intro-int';
+
+#page-modelo-padrao-personalizado {
+    .col-left {
+        @media screen and (min-width: desktop-min) {
+            width: 72%;
+        }
+    }
+
+    .col-right {
+        @media screen and (min-width: desktop-min) {
+            width: 27.3%;
+        }
+    }
+
+    .model-side-form-1 {
+        @media screen and (min-width: desktop-min) {
+            margin-top: -276px;
+            top: 22px;
+            position: sticky;
+        }
+    }
+}
+
+@import '../components/forms/model-1';
+@import '../globals-sections/section-ofertas';
+@import '../globals-sections/section-unidades';
+
+#section-ofertas-0-km {
+    margin-top: 64px;
+
+    @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+        margin-top: 9px;
+    }
+}

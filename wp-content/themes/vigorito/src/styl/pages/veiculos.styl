@@ -1,0 +1,182 @@
+@import '../global-variables';
+@import '../globals-sections/section-banner-intro-int';
+
+#section-1 {
+    @media screen and (min-width: desktop-min) {
+        margin-bottom: 40px;
+    }
+
+    .col-left {
+        @media screen and (min-width: desktop-min) {
+            width: 72%;
+        }
+    }
+
+    .col-right {
+        @media screen and (min-width: desktop-min) {
+            width: 27.3%;
+        }
+    }
+
+    .model-side-form-1 {
+        @media screen and (min-width: desktop-min) {
+            margin-top: -276px;
+            top: 22px;
+            position: sticky;
+        }
+    }
+
+    @import '../components/forms/model-1';
+}
+
+#section-2 {
+    @media screen and (min-width: desktop-min) {
+        margin-bottom: 65px;
+    }
+
+    #myTab-modelos::-webkit-scrollbar {
+        height: 5px;
+    }
+
+    #myTab-modelos {
+        align-items: center;
+
+        @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-flow: row;
+            overflow-x: scroll;
+            white-space: nowrap;
+            position: absolute;
+            left: 0;
+            border-radius: 0;
+            padding-bottom: 13px;
+            background: cor8;
+        }
+
+        .nav-item {
+            button {
+                color: cor5 !important;
+                font-weight: w-medium;
+                padding: 0;
+                padding-left: 29px;
+                padding-bottom: 1px;
+
+                @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                    padding-right: 29px;
+                }
+
+                &:after {
+                    @media screen and (min-width: desktop-min) {
+                        content: '';
+                        border-right: 1px solid cor5;
+                        padding-left: 29px;
+                    }
+                }
+            }
+        }
+
+        .nav-tabs {
+            border: none !important;
+        }
+
+        .nav-link.active {
+            border: none;
+            border-bottom: 4px solid cor3;
+            font-weight: w-bold;
+            background: transparent;
+        }
+    }
+
+    .bg-menu {
+        background: cor8;
+        min-height: 38px;
+        margin-bottom: 25px;
+        margin-top: 16px;
+        display: flex;
+        align-items: center;
+
+        @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+            margin-bottom: 35px;
+        }
+    }
+
+    .line-car {
+        .content {
+            display: flex;
+
+            @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                display: block;
+            }
+
+            .cars {
+                width: 867px;
+                text-align: center;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 39px;
+                row-gap: 21px;
+
+                @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                    width: 100%;
+                    gap: 16px;
+                }
+
+                img {
+                    object-fit: contain;
+
+                    @media screen and (min-width: desktop-min) {
+                        width: 253px;
+                        height: 123px;
+                        object-position: bottom;
+                    }
+
+                    @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                        width: 100%;
+                        height: 62%;
+                        object-position: bottom;
+                    }
+                }
+
+                a {
+                    @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                        width: 47%;
+                    }
+
+                    @media screen and (min-width: desktop-min) {
+                        max-width: 254px;
+                    }
+                }
+
+                .title {
+                    text-align: center;
+                    font-size: 20px;
+                    font-weight: w-medium;
+                    margin-top: 20px;
+
+                    @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    @import '../components/forms/model-1';
+
+    .model-side-form-1 {
+        @media screen and (min-width: desktop-min) {
+            margin-top: -63px;
+            position: sticky;
+            top: 96px;
+        }
+
+        @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+            margin-top: 40px;
+        }
+    }
+}
+
+@import '../globals-sections/section-ofertas';
+@import '../globals-sections/section-unidades';

@@ -1,0 +1,36 @@
+@import './global-variables';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+// configs
+* {
+  font-size: size-text-desktop;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: regular;
+  padding: 0;
+  margin: 0;
+  color: cor5;
+  line-height: normal;
+  font-size: 17px;
+
+  @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+    font-size: size-text-mobile;
+  }
+}
+
+.title-large-min {
+  font-size: size-title-large-min;
+  color: cor2;
+  text-transform: none;
+}
+
+.title-large {
+  font-size: size-title-large-desk;
+  color: cor3;
+  text-transform: uppercase;
+  font-weight: regular;
+
+  @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+    font-size: size-title-large-mob;
+    line-height: normal !important;
+  }
+}

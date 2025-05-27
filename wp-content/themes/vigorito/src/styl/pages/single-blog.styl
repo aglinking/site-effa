@@ -1,0 +1,81 @@
+@import '../global-variables';
+
+#single-blog {
+    .has-very-dark-gray-background-color {
+        background-color: lightgray;
+    }
+
+    .img-destaque {
+        width: 100%;
+        object-fit: cover;
+        height: 247px;
+        margin-top: 10px;
+
+        @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+            height: 177px;
+        }
+    }
+
+    #content-single {
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 70px;
+        justify-content: space-between;
+
+        @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+            flex-wrap: wrap;
+            margin-top: 26px;
+            margin-bottom: 40px;
+        }
+
+        #content-general {
+            max-width: 942px;
+
+            @media screen and (min-width: desktop-min) {
+                padding-right: 23px;
+            }
+
+            @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                max-width: 100%;
+            }
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                height: auto;
+            }
+
+            .title {
+                font-weight: w-bold;
+                color: cor2;
+                font-size: 30px;
+                display: block;
+                margin-bottom: 15px;
+
+                @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                    font-size: 24px;
+                }
+            }
+
+            .data {
+                font-size: 16px;
+                color: cor7;
+                display: block;
+                margin-bottom: 44px;
+            }
+
+            h2, h3, h4, h5, h6 {
+                font-weight: w-bold;
+                color: cor2;
+                font-size: 22px;
+            }
+
+            a {
+                color: cor1 !important;
+                text-decoration: none !important;
+            }
+        }
+    }
+
+    @import '../globals-sections/sidebar-blog';
+}

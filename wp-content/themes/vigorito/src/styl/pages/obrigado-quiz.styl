@@ -1,0 +1,46 @@
+@import '../global-variables';
+
+#obrigado-quiz {
+    background-color: cor2;
+
+    // height: 100vh;
+    #section-1 {
+        padding-top: 123px;
+        padding-bottom: 150px;
+
+        // border-bottom: 1px solid cor6
+        .row-1 {
+            img {
+                margin-bottom: 40px;
+
+                @media screen and (min-width: desktop-min) {
+                    width: 300px;
+                }
+
+                @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                    max-width: 269px;
+                    margin: 0 auto;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+
+        .row-2 {
+            text-align: center;
+
+            .title {
+                font-size: 30px;
+                color: cor6;
+            }
+
+            .content {
+                width: 719px;
+                margin: 0 auto;
+
+                @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
