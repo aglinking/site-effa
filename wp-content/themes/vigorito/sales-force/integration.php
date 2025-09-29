@@ -164,6 +164,8 @@ function autenticarSalesforce()
 					}
 				} else {
 					$endpointUrl = "/services/apexrest/v1/cases/linking_site";
+        			$leadData['recordType'] = "SAC";
+        			
 				}
 			} else {
 				$endpointUrl = "/services/apexrest/v1/leads/linking_site";

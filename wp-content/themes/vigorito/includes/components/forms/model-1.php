@@ -9,6 +9,9 @@
         <input type="hidden" name="utm_medium" value="" >
         <input type="hidden" name="utm_source" value="" >
         <input type="hidden" name="utm_campaign" value="">
+         <?php if(isset($_GET['homolog'])): ?>
+            <input type="hidden" name="homolog" value="homolog">
+        <?php endif; ?>
         <input type="text" name="Nome" placeholder="Nome" class="form-control" required>
         <input type="email" name="Email" placeholder="E-mail" class="form-control" required>
         <input type="text" name="Telefone/WhatsApp" class="phone-mask form-control" placeholder="Telefone/Whatsapp" required>
